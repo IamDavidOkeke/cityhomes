@@ -105,7 +105,7 @@ a{
 }
 
 .hero-gradient{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .slide-1{
     background-image: url('../media/hero-slide-1.webp');   
@@ -125,7 +125,7 @@ a{
 }
 
 .slide-6{
-    background-image: url('../media/breno-assis-r3WAWU5Fi5Q-unsplash.jpg');
+    background-image: url('../media/dillon-kydd-2keCPb73aQY-unsplash.jpg');
 }
 .custom-list{
     list-style-position: inside;
@@ -215,6 +215,9 @@ a{
     }
     .custom-grid{
         grid-template-columns: 1fr 1fr;
+    }
+    .mh-80vh{
+        min-height: 80vh;
     }
   }
 
