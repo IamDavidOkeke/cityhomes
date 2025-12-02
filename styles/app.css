@@ -117,9 +117,11 @@ a{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 .crousel > section{
     flex: 1 0 100% !important;
+    scroll-snap-align: start;
 }
 .slidebg{
     background-position: center;
@@ -131,24 +133,40 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .slide-1{
-    background-image: url('../media/hero-slide-1.webp');   
+    background-image: url('../media/dillon-kydd-2keCPb73aQY-unsplash.jpg');   
 }
 .slide-2{
-   background-image: url('../media/hero-slide-2.webp');
+   background-image: url('../media/avi-werde-hHz4yrvxwlA-unsplash.jpg');
 }
 
 .slide-3{
-    background-image: url('../media/hero-slide-3.webp');
+    background-image: url('../media/frames-for-your-heart-mR1CIDduGLc-unsplash.jpg');
 }
 .slide-4{
-    background-image: url('../media/hero-slide-4.webp');   
+    background-image: url('../media/frederico-ferreira-s7cAPTHjcRQ-unsplash.jpg');   
 }
 .slide-5{
-   background-image: url('../media/hero-slide-5.webp');
+   background-image: url('../media/daniel-barnes-RKdLlTyjm5g-unsplash.jpg');
 }
 
 .slide-6{
-    background-image: url('../media/dillon-kydd-2keCPb73aQY-unsplash.jpg');
+    background-image: url('../media/roger-starnes-sr-_CJ1UJpwkrk-unsplash.jpg');
+}
+.slider-nav{
+    z-index: 100;
+    margin-top: -40px;
+}
+.slider-nav a {
+    margin: 0 1rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    opacity: 0.7;
+    border-radius: 50%;
+    transition: opacity ease 250ms;
+    background-color: white !important;    
+}
+.slider-nav a:hover, .slider-nav a:hover {
+   opacity: 1;
 }
 .custom-list{
     list-style-position: inside;
