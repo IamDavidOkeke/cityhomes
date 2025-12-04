@@ -135,7 +135,9 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.mw-80{
+    max-width: 80% !important;
+}
 .hero-gradient{
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -286,6 +288,9 @@ video{
     /* Styles applied when the screen is at least 768px wide */
     .custom-grid{
         grid-template-columns: 1fr;
+    }
+    .mw-80{
+        max-width: 95% !important;
     }
   }
 
