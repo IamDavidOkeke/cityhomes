@@ -136,7 +136,8 @@ a{
     background-size: cover;
 }
 .mw-80{
-    max-width: 80% !important;
+    max-width: 100% !important;
+    height: 100vh !important;
 }
 .hero-gradient{
     background-color: rgba(0, 0, 0, 0.5);
@@ -145,7 +146,7 @@ a{
     background-image: url('../media/dillon-kydd-2keCPb73aQY-unsplash.jpg');   
 }
 .slide-2{
-   background-image: url('../media/tazz-anderson-ya9POX9IxVM-unsplash.jpg');
+   background-image: url('../media/IMG-20251205-WA0001.jpg');
 }
 
 .slide-3{
@@ -157,6 +158,9 @@ a{
 .slide-5{
    background-image: url('../media/daniel-barnes-RKdLlTyjm5g-unsplash.jpg');
 }
+.slide-6{
+    background-image: url('../media/tazz-anderson-ya9POX9IxVM-unsplash.jpg');
+ }
 .slider-nav{
     z-index: 100;
     margin-top: -40px;
@@ -202,7 +206,7 @@ a{
     background-image: url('../media/AdobeStock_434746989.avif');
 }
 .sticky-slide-2{
-    background-image: url('../media/milivoj-kuhar-Te48TPzdcU8-unsplash.jpg');
+    background-image: url('../media/lotus-design-n-print-_IAZoJ6X-1A-unsplash.jpg');
 }
 .sticky-slide-3{
     background-image: url('../media/aalo-lens-LqGf5UvHCZ8-unsplash.jpg');
@@ -248,8 +252,11 @@ video{
     max-width: 50px;
 }
 .tinier-img-link{
-    max-width: 20px;
+    max-width: 35px;
 }
+/* .tinier-img-link{
+    max-width: 20px;
+} */
 .black-bg{
     background-color: #414042;
 }
@@ -289,28 +296,8 @@ video{
     .custom-grid{
         grid-template-columns: 1fr;
     }
-    .mw-80{
-        max-width: 95% !important;
-    }
   }
 
-  /* @keyframes carousel {
-    0%   {
-        transform: translate(0);
-    }
-    20%{
-        transform: translate(100%);
-    }
-    40%{
-        transform: translate(120%);
-    }
-    60%{
-        transform: translate(140%);
-    }
-    80%{
-        transform: translate(160%);
-    }
-    100% {
-        transform: translate(160%);
-    }
-  } */
+ .modal-content{
+    height: 100%;
+ }
