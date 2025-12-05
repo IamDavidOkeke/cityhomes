@@ -206,7 +206,7 @@ a{
     background-image: url('../media/AdobeStock_434746989.avif');
 }
 .sticky-slide-2{
-    background-image: url('../media/lotus-design-n-print-_IAZoJ6X-1A-unsplash.jpg');
+    background-image: url('../media/lotus-design-n-print-g51F6-WYzyU-unsplash.jpg');
 }
 .sticky-slide-3{
     background-image: url('../media/tile-merchant-ireland-ujfcn8vQpUY-unsplash\ \(1\).jpg');
@@ -303,4 +303,10 @@ video{
  }
  .modal, .modal-dialog, .modal-content{
     margin: 0 !important;
+ }
+ #chat-bot-launcher-container.chat-bot-avatar-launcher{
+    bottom: 30% !important;
+ }
+ #chat-bot-message-container {
+    bottom: 40% !important;
  }
