@@ -301,3 +301,6 @@ video{
  .modal-content{
     height: 100%;
  }
+ .modal, .modal-dialog, .modal-content{
+    margin: 0 !important;
+ }
