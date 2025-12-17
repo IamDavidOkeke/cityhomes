@@ -17,12 +17,28 @@
     font-style: normal;  
     font-display: swap; 
   }
+  @font-face {
+    font-family: "New York"; /* Give your font a descriptive name */
+    src: url('../media/font/NewYork\ PERSONAL\ USE.otf');   
+    font-weight: bold; 
+    font-style: normal;  
+    font-display: swap; 
+  }
+  @font-face {
+    font-family: "Century Gothic"; /* Give your font a descriptive name */
+    src: url('../media/font/centurygothic.ttf'), url('../media/font/centurygothic_bold.ttf') ;   
+    font-style: normal;  
+    font-display: swap; 
+  }
+h1,h2,h3,h4,h5,h6{
+    font-family: "New York", sans-serif !important;
+}
 
 html{
      font-size: calc(0.75em + 0.5vmin);
   }
 *{
-    font-family: "Poppins", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 img{
     width: 100%;
@@ -106,7 +122,7 @@ a{
     display: grid;
 }
 .custom-grid{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 /* custom */
 .navlink{
@@ -141,6 +157,9 @@ a{
 }
 .hero-gradient{
     background-color: rgba(0, 0, 0, 0.5);
+}
+.darker-gradient{
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .slide-1{
     background-image: url('../media/dillon-kydd-2keCPb73aQY-unsplash.jpg');   
@@ -254,9 +273,9 @@ video{
 .tinier-img-link{
     max-width: 35px;
 }
-/* .tinier-img-link{
+.tiniest-img-link{
     max-width: 20px;
-} */
+}
 .black-bg{
     background-color: #414042;
 }
@@ -269,6 +288,15 @@ video{
 .bg-white{
     background-color: white;
 }
+.grid-4-col{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cp-l{
+    margin-left: auto;
+}
+.block{
+    display: block;
+}
 @media screen and (max-width: 868px) {
     /* Styles applied when the screen is at least 768px wide */
     .mobile-show{
@@ -278,12 +306,19 @@ video{
         display: none;
     }
     .custom-grid{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .mh-80vh{
         min-height: 80vh;
     }
+    .grid-4-col{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cp-l{
+        padding-left: initial;
+    }
   }
+
 
   @media screen and (max-width: 1080px) {
     /* Styles applied when the screen is at least 768px wide */
@@ -294,6 +329,9 @@ video{
   @media screen and (max-width: 568px) {
     /* Styles applied when the screen is at least 768px wide */
     .custom-grid{
+        grid-template-columns: 1fr;
+    }
+    .grid-4-col{
         grid-template-columns: 1fr;
     }
   }
@@ -313,3 +351,54 @@ video{
  .comp-color{
     color: #32828d;
  }
+.world-map-bg{
+    background-image: url('../media/nikhilesh-boppana-j9jBsNg2pSw-unsplash.jpg');
+}
+.csr-slide1{
+    background-image: url('../media/nico-smit-MrQs5dCGyno-unsplash.jpg');
+}
+.csr-slide2{
+    background-image: url('../media/nico-smit-NFoerQuvzrs-unsplash.jpg');
+}
+.csr-slide3{
+    background-image: url('../media/nikhilesh-boppana-j9jBsNg2pSw-unsplash.jpg');
+}
+.csr-border{
+    border: 3px solid rgba(141, 61, 50);
+    border-radius: 5px;
+}
+.collage-container {
+    display: grid;
+    /* Creates 4 equal-width columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    /* Sets a fixed height for auto-generated rows, adjust as needed */
+    grid-auto-rows: 200px; 
+    /* Adds spacing (gap) between grid items */
+    gap: 10px; 
+  }
+  
+  /* Ensure all images fill their grid cells */
+  .collage-container img {
+    width: 100%;
+    height: 100%;
+    /* Ensures images cover the area without distortion, cropping if necessary */
+    object-fit: cover; 
+  }
+  
+  /* Optional: create specific styles for larger collage items */
+  .collage-container img.big {
+    /* Spans 2 columns */
+    grid-column: span 2; 
+    /* Spans 2 rows */
+    grid-row: span 2; 
+  }
+  .collage-container img.horizontal{
+    grid-column: span 2; 
+  }
+  .collage-container img.vertical{
+    grid-row: span 2; 
+  }
+  .collage-container {
+    grid-auto-flow: dense;
+  }
+  
